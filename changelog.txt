@@ -1,0 +1,75 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.1.10
+Date: 2025-04-01
+  Changelog:
+    - Added new battery research levels from 1 to 18.
+    - Battery research now dynamically integrates optional science packs based on existing mod settings.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.8
+Date: 2025-01-29
+  Features:
+    - New setting "Disables Bobs bots" Disables Bob's bots and Roboports along with their associated research.
+    - New setting "Forces a recipe for MK1 bots" Adds an additional recipe for MK1 bots and Roboports based on base-game specifications and places them in the regular category.
+    - If "Forces a recipe for MK1 bots" is enabled, a second recipe for logistic-robot, construction-robot, and Roboports is added based on base-game specifications, as the original recipes from Bob's Mods are altered and cannot be easily reverted.
+    - If "Forces a recipe for MK1 bots" is enabled, the recipes for MK1 bots and Roboports are unlocked through research.
+    - Fixed the order of logistic bots and construction bots, and Roboports so that MK1 appears first, followed by MK2, MK3, MK4, and MK5.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.7
+Date: 2024-12-17
+  Bugfixes:
+    - Fixed an issue with the crafting time for Logistic Robots MK3.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.6
+Date: 2024-11-30
+  Bugfixes:
+    - Resolved an issue where the Logistic Robot MK4 technology incorrectly unlocked the Construction Robot MK4 recipe. The correct recipe is now awarded.
+    - Minor code optimizations to improve mod stability and compatibility.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.5
+Date: 2024-11-29
+  Features:
+    - Added a setting to enable or disable the Roboport MK3 technology independently.
+    - Introduced a setting to switch between different maximum MK tiers (e.g., MK2, MK3, MK4, MK5).
+    - Enhanced support for space science research settings within the mod.
+  Bugfixes:
+    - Optimized the research ingredient handling for cleaner and more dynamic integration.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.4
+Date: 2024-11-08
+  Bugfixes:
+    - Fixed Roboport graphical issues.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.3
+Date: 2024-11-08
+  Features:
+    - A setting to enable or disable the research for "Worker Robot Cargo Size".
+---------------------------------------------------------------------------------------------------
+Version: 1.1.2
+Date: 2024-11-08
+  Bugfixes:
+    - Bug Fixes (Changelog crash)
+---------------------------------------------------------------------------------------------------
+Version: 1.1.1
+Date: 2024-11-08
+  Bugfixes:
+    - Bug Fixes
+---------------------------------------------------------------------------------------------------
+Version: 1.1.0
+Date: 2024-11-07
+  Features:
+    - Added Roboport MK2 and MK3 to provide enhanced functionality and capacity for robots.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.2
+Date: 2024-11-01
+  Bugfixes:
+    - Bugfix: Fixed an issue where logistic and construction robots would revert to the base tier when mined. Thanks to Sgamez for identifying this issue. Robots now retain their respective tier (MK2-MK5) upon mining.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.1
+Date: 2024-11-01
+  Bugfixes:
+    - Bug Fixes
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 2024-10-30
+  Features:
+    - Mod Creation
