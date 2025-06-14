@@ -55,6 +55,15 @@ BRE_roboportmk2.base.layers =
         scale = 0.5
     }
   }
+BRE_roboportmk2.base_patch =
+    {
+      filename = "__Better_Robots_Extended__/graphics/entity/roboport/bre-roboport-mk2-base-patch.png",
+      priority = "medium",
+      width = 138,
+      height = 100,
+      shift = util.by_pixel(1.5, -5),
+      scale = 0.5
+    }
 
 BRE_roboportmk3 = deepCopy(data.raw.roboport["roboport"])
 BRE_roboportmk3.name = "bre-roboport-mk3"
@@ -100,6 +109,15 @@ BRE_roboportmk3.base.layers =
         scale = 0.5
     }
   }
+  BRE_roboportmk3.base_patch =
+    {
+      filename = "__Better_Robots_Extended__/graphics/entity/roboport/bre-roboport-mk3-base-patch.png",
+      priority = "medium",
+      width = 138,
+      height = 100,
+      shift = util.by_pixel(1.5, -5),
+      scale = 0.5
+    }
   
 
 data:extend(

@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.11  
+Date: 2025-06-14  
+  Changelog:
+    - Fixed: Charging port hatch now uses a custom sprite instead of the vanilla one,
+             preventing visual misalignment caused by other mods (e.g. Bob's Mods).
+    - Minor visual cleanup on Mk2 and Mk3 roboports to ensure consistent appearance.
+---------------------------------------------------------------------------------------------------
 Version: 1.1.10
 Date: 2025-04-01
   Changelog:
