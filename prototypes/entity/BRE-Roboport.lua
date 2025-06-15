@@ -64,6 +64,48 @@ BRE_roboportmk2.base_patch =
       shift = util.by_pixel(1.5, -5),
       scale = 0.5
     }
+BRE_roboportmk2.base_animation =
+    {
+      filename = "__base__/graphics/entity/roboport/roboport-base-animation.png",
+      priority = "medium",
+      width = 83,
+      height = 59,
+      frame_count = 8,
+      animation_speed = 0.5,
+      shift = util.by_pixel(-17.75, -71.25),
+      scale = 0.5
+    }
+BRE_roboportmk2.door_animation_up =
+    {
+      filename = "__base__/graphics/entity/roboport/roboport-door-up.png",
+      priority = "medium",
+      width = 97,
+      height = 38,
+      frame_count = 16,
+      shift = util.by_pixel(-0.25, -39.5),
+      scale = 0.5
+    }
+BRE_roboportmk2.door_animation_down =
+    {
+      filename = "__base__/graphics/entity/roboport/roboport-door-down.png",
+      priority = "medium",
+      width = 97,
+      height = 41,
+      frame_count = 16,
+      shift = util.by_pixel(-0.25, -19.75),
+      scale = 0.5
+    }
+BRE_roboportmk2.recharging_animation =
+    {
+      filename = "__base__/graphics/entity/roboport/roboport-recharging.png",
+      draw_as_glow = true,
+      priority = "high",
+      width = 37,
+      height = 35,
+      frame_count = 16,
+      scale = 1.5,
+      animation_speed = 0.5,
+    }
 
 BRE_roboportmk3 = deepCopy(data.raw.roboport["roboport"])
 BRE_roboportmk3.name = "bre-roboport-mk3"
@@ -117,6 +159,48 @@ BRE_roboportmk3.base.layers =
       height = 100,
       shift = util.by_pixel(1.5, -5),
       scale = 0.5
+    }
+BRE_roboportmk3.base_animation =
+    {
+      filename = "__base__/graphics/entity/roboport/roboport-base-animation.png",
+      priority = "medium",
+      width = 83,
+      height = 59,
+      frame_count = 8,
+      animation_speed = 0.5,
+      shift = util.by_pixel(-17.75, -71.25),
+      scale = 0.5
+    }
+BRE_roboportmk3.door_animation_up =
+    {
+      filename = "__base__/graphics/entity/roboport/roboport-door-up.png",
+      priority = "medium",
+      width = 97,
+      height = 38,
+      frame_count = 16,
+      shift = util.by_pixel(-0.25, -39.5),
+      scale = 0.5
+    }
+BRE_roboportmk3.door_animation_down =
+    {
+      filename = "__base__/graphics/entity/roboport/roboport-door-down.png",
+      priority = "medium",
+      width = 97,
+      height = 41,
+      frame_count = 16,
+      shift = util.by_pixel(-0.25, -19.75),
+      scale = 0.5
+    }
+BRE_roboportmk3.recharging_animation =
+    {
+      filename = "__base__/graphics/entity/roboport/roboport-recharging.png",
+      draw_as_glow = true,
+      priority = "high",
+      width = 37,
+      height = 35,
+      frame_count = 16,
+      scale = 1.5,
+      animation_speed = 0.5,
     }
   
 

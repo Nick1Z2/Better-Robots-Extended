@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.12
+Date: 2025-06-15 
+  Changelog:
+    - Adjusted hatch alignment on Mk2 and Mk3 roboports to ensure correct visual positioning.
+    - Minor tweak to base_patch offset for better sprite consistency.
+---------------------------------------------------------------------------------------------------
 Version: 1.1.11  
 Date: 2025-06-14  
   Changelog:
