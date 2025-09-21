@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.13
+Date: 2025-09-21 
+  Bugfixes:
+    - Fixed Logistic Robot MK5 animation: in_motion sprite dimensions/offsets were mismatched. Now aligned with the cargo animation (80×84 frames, proper row offset). Flying animation without cargo now displays correctly.
+---------------------------------------------------------------------------------------------------
 Version: 1.1.12
 Date: 2025-06-15 
   Changelog:

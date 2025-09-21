@@ -1260,11 +1260,11 @@ data:extend(
 			filename = "__Better_Robots_Extended__/graphics/entity/logistic-robot/bre-logistic-robot-mk5.png",
 			priority = "high",
             line_length = 16,
-            width = 66,
-            height = 76,
-            shift = util.by_pixel(0, -4.5),
+            width = 80,
+            height = 84,
+            shift = util.by_pixel(0, -3),
             direction_count = 16,
-            y = 76,
+            y = 168,
             scale = 0.5
         },
     in_motion_with_cargo = {
