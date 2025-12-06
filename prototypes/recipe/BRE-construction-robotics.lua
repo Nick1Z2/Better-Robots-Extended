@@ -62,7 +62,7 @@ if settings.startup["BRE-erzwinge-MK1-Bots"].value then
             allow_quality = true,
             ingredients = {
                 { type = "item", name = "flying-robot-frame", amount = 1 },
-                { type = "item", name = "electronic-circuit", amount = 1 }
+                { type = "item", name = "electronic-circuit", amount = 2 }
             },
             results = {{ type = "item", name = "construction-robot", amount = 1 }}
         }

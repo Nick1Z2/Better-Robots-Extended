@@ -2,6 +2,18 @@ data:extend({
 
 	{
 		type = "item",
+		name = "BRE-logistic-robotics-mk1",
+		icon = "__base__/graphics/icons/logistic-robot.png",
+		icon_size = 64,
+		icon_mipmaps = 4,
+		subgroup = "logistic-network",
+		order = "a[robot]-ab[logistic-robot]",
+		place_result = "BRE-logistic-robotics-mk1",
+		stack_size = 100,
+		weight = 20 * kg
+	},
+	{
+		type = "item",
 		name = "BRE-logistic-robotics-mk2",
 		icon = "__Better_Robots_Extended__/graphics/icons/bre-logistic-robot-mk2.png",
 		icon_size = 64,

@@ -192,4 +192,11 @@ data:extend(
         default_value = false,
         order = "fa"
     },
+	{
+        type = "bool-setting",
+        name = "BRE-erzwinge-BRE-MK1-Bots",
+        setting_type = "startup",
+        default_value = false,
+        order = "fb"
+    },
 })

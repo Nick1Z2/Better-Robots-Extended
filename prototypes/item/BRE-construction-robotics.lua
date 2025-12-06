@@ -2,6 +2,18 @@ data:extend({
 
 	{
 		type = "item",
+		name = "BRE-construction-robotics-mk1",
+		icon = "__base__/graphics/icons/construction-robot.png",
+		icon_size = 64,
+		icon_mipmaps = 4,
+		subgroup = "logistic-network",
+		order = "a[robot]-bb[construction-robot]",
+		place_result = "BRE-construction-robotics-mk1",
+		stack_size = 100,
+		weight = 20 * kg
+	},
+	{
+		type = "item",
 		name = "BRE-construction-robotics-mk2",
 		icon = "__Better_Robots_Extended__/graphics/icons/bre-construction-robot-mk2.png",
 		icon_size = 64,

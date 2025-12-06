@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.14
+Date: 2025-12-06
+  Changes:
+    - Improved recipe detection system to correctly identify modified construction-robot and logistic-robot base recipes when used with Bob’s Mods and other overhauls.
+    - MK1 robot recipes are now generated only after final data stage to ensure full compatibility with mods that patch vanilla robots in data-updates and data-final-fixes.
+    - Unified MK1 recipe loading to prevent duplicate registration and improve stability.
+    - Added safety check preventing MK1 generation when base recipes remain unmodified (unless forced through mod setting).
+---------------------------------------------------------------------------------------------------
 Version: 1.1.13
 Date: 2025-09-21 
   Bugfixes:
