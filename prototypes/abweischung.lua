@@ -55,8 +55,24 @@ state.construction_robot_is_modified =
     recipe_changed("construction-robot", vanilla_construction_ingredients)
 
 local load_mk1 = false
+local mode = settings.startup["BRE-erzwinge-BRE-MK1-Bots"].value
+local logistic_enable = false
+local construction_enable = false
 
-if state.logistic_robot_is_modified then
+if mode == "Disable" then
+    logistic_enable = false
+    construction_enable = false
+
+elseif mode == "Override" then
+    logistic_enable = true
+    construction_enable = true
+
+elseif mode == "Auto" then
+    logistic_enable = state.logistic_robot_is_modified
+    construction_enable = state.construction_robot_is_modified
+end
+
+if logistic_enable then
     log("BRE: logistic-robot recipe modified!")
 	load_mk1 = true
 	table.insert(data.raw["technology"]["logistic-robotics"].effects, {
@@ -69,7 +85,7 @@ if state.logistic_robot_is_modified then
 	})
 end
 
-if state.construction_robot_is_modified then
+if construction_enable then
     log("BRE: construction-robot recipe modified!")
 	load_mk1 = true
 	table.insert(data.raw["technology"]["construction-robotics"].effects, {

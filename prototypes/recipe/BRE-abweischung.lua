@@ -1,6 +1,22 @@
 local state = require("__Better_Robots_Extended__/scripts/state")
+local mode = settings.startup["BRE-erzwinge-BRE-MK1-Bots"].value
+local logistic_enable = false
+local construction_enable = false
 
-if state.logistic_robot_is_modified or settings.startup["BRE-erzwinge-BRE-MK1-Bots"].value then
+if mode == "Disable" then
+    logistic_enable = false
+    construction_enable = false
+
+elseif mode == "Override" then
+    logistic_enable = true
+    construction_enable = true
+
+elseif mode == "Auto" then
+    logistic_enable = state.logistic_robot_is_modified
+    construction_enable = state.construction_robot_is_modified
+end
+
+if logistic_enable then
 	data:extend({
         {
             type = "recipe",
@@ -30,7 +46,7 @@ if state.logistic_robot_is_modified or settings.startup["BRE-erzwinge-BRE-MK1-Bo
     })
 end
 
-if state.construction_robot_is_modified or settings.startup["BRE-erzwinge-BRE-MK1-Bots"].value then
+if construction_enable then
 	data:extend({
         {
             type = "recipe",
