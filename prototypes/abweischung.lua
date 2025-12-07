@@ -2,7 +2,7 @@ local state = require("__Better_Robots_Extended__/scripts/state")
 
 local vanilla_logistic_ingredients = {
     {"flying-robot-frame", 1},
-    {"advanced-circuit", 1}
+    {"advanced-circuit", 2}
 }
 local vanilla_construction_ingredients = {
     {"flying-robot-frame", 1},

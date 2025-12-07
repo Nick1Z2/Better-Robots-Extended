@@ -18,12 +18,8 @@ BRE_roboportmk2.next_upgrade = "bre-roboport-mk3"
 BRE_roboportmk2.logistics_radius = settings.startup["BRE-logistic-radius-mk2"].value
 BRE_roboportmk2.construction_radius = settings.startup["BRE-construction-radius-mk2"].value
 BRE_roboportmk2.minable = {mining_time = 0.5, result = "bre-roboport-mk2"}
-BRE_roboportmk2.energy_source = {
-    type = "electric",
-    usage_priority = "secondary-input",
-    input_flow_limit = 16 * Loading_Speed .. "MW",
-    buffer_capacity = 600 * Loading_Speed .. "MJ",
-  }
+BRE_roboportmk2.energy_source.input_flow_limit = 16 * Loading_Speed .. "MW"
+BRE_roboportmk2.energy_source.buffer_capacity = 600 * Loading_Speed .. "MJ"
 BRE_roboportmk2.recharge_minimum = "160MJ"
 BRE_roboportmk2.energy_usage = "500kW"
 BRE_roboportmk2.charging_energy = 1 * Loading_Speed .. "MW"
@@ -113,12 +109,8 @@ BRE_roboportmk3.fast_replaceable_group = "roboport"
 BRE_roboportmk3.logistics_radius = settings.startup["BRE-logistic-radius-mk3"].value
 BRE_roboportmk3.construction_radius = settings.startup["BRE-construction-radius-mk3"].value
 BRE_roboportmk3.minable = {mining_time = 1, result = "bre-roboport-mk3"}
-BRE_roboportmk3.energy_source = {
-  type = "electric",
-  usage_priority = "secondary-input",
-  input_flow_limit = 48 * Loading_Speed .. "MW",
-  buffer_capacity = 1200 * Loading_Speed .. "MJ",
-}
+BRE_roboportmk3.energy_source.input_flow_limit = 48 * Loading_Speed .. "MW"
+BRE_roboportmk3.energy_source.buffer_capacity = 1200 * Loading_Speed .. "MJ"
 BRE_roboportmk3.recharge_minimum = "240MJ"
 BRE_roboportmk3.energy_usage = "1MW"
 BRE_roboportmk3.charging_energy = 2 * Loading_Speed .. "MW"

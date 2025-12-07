@@ -9,7 +9,7 @@ if state.logistic_robot_is_modified or settings.startup["BRE-erzwinge-BRE-MK1-Bo
             allow_quality = true,
             ingredients = {
                 { type = "item", name = "flying-robot-frame", amount = 1 },
-                { type = "item", name = "advanced-circuit", amount = 1 }
+                { type = "item", name = "advanced-circuit", amount = 2 }
             },
             results = {{ type = "item", name = "BRE-logistic-robotics-mk1", amount = 1 }}
         },
