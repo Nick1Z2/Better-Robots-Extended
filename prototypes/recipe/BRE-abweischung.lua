@@ -2,18 +2,22 @@ local state = require("__Better_Robots_Extended__/scripts/state")
 local mode = settings.startup["BRE-erzwinge-BRE-MK1-Bots"].value
 local logistic_enable = false
 local construction_enable = false
+local roboport_enable = false
 
 if mode == "Disable" then
     logistic_enable = false
     construction_enable = false
+	roboport_enable = false
 
 elseif mode == "Override" then
     logistic_enable = true
     construction_enable = true
+	roboport_enable = true
 
 elseif mode == "Auto" then
     logistic_enable = state.logistic_robot_is_modified
     construction_enable = state.construction_robot_is_modified
+	roboport_enable = state.roboport_is_modified
 end
 
 if logistic_enable then
@@ -24,8 +28,8 @@ if logistic_enable then
             enabled = false,
             allow_quality = true,
             ingredients = {
-                { type = "item", name = "flying-robot-frame", amount = 1 },
-                { type = "item", name = "advanced-circuit", amount = 2 }
+                {type = "item", name = "flying-robot-frame", amount = 1 },
+                {type = "item", name = "advanced-circuit", amount = 2 }
             },
             results = {{ type = "item", name = "BRE-logistic-robotics-mk1", amount = 1 }}
         },
@@ -54,8 +58,8 @@ if construction_enable then
             enabled = false,
             allow_quality = true,
             ingredients = {
-                { type = "item", name = "flying-robot-frame", amount = 1 },
-                { type = "item", name = "electronic-circuit", amount = 2 }
+                {type = "item", name = "flying-robot-frame", amount = 1 },
+                {type = "item", name = "electronic-circuit", amount = 2 }
             },
             results = {{ type = "item", name = "BRE-construction-robotics-mk1", amount = 1 }}
         },
@@ -73,5 +77,38 @@ if construction_enable then
 			},
 			results = {{type = "item", name = "BRE-construction-robotics-mk2", amount = 1}}
 		}
+    })
+end
+
+if roboport_enable then
+	data:extend({
+        {
+            type = "recipe",
+            name = "bre-roboport-mk1",
+            enabled = false,
+            allow_quality = true,
+            ingredients = {
+                {type = "item", name = "steel-plate", amount = 45 },
+                {type = "item", name = "iron-gear-wheel", amount = 45 },
+                {type = "item", name = "advanced-circuit", amount = 45 }
+            },
+            results = {{ type = "item", name = "bre-roboport-mk1", amount = 1 }}
+        },
+		{
+			  type = "recipe",
+			  name = "bre-roboport-mk2_2",
+			  enabled = false,
+			  allow_quality = true,
+			  energy_required = 10,
+			  ingredients =
+			  {
+				{type = "item", name = "steel-plate", amount = 10},
+				{type = "item", name = "bre-roboport-mk1", amount = 2},
+				{type = "item", name = "battery", amount = 45},
+				{type = "item", name = "processing-unit", amount = 5}
+			  },
+			  results = {
+				{type = "item", name = "bre-roboport-mk2", amount = 1}}
+		},
     })
 end

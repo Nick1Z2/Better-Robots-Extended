@@ -50,7 +50,7 @@ if settings.startup["BRE-erzwinge-MK1-Bots"].value then
 			  {type = "item", name = "iron-gear-wheel", amount = 45},
 			  {type = "item", name = "advanced-circuit", amount = 45}
 			},
-			results = {{type="item", name="roboport", amount=1}}
+			results = {{type="item", name="bre-roboport-mk1", amount=1}}
         }
     })
 end

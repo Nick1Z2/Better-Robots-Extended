@@ -8,6 +8,11 @@ local vanilla_construction_ingredients = {
     {"flying-robot-frame", 1},
     {"electronic-circuit", 2}
 }
+local vanilla_roboport_ingredients = {
+    {"steel-plate", 45},
+    {"iron-gear-wheel", 45},
+    {"advanced-circuit", 45}
+}
 local function recipe_changed(recipe_name, vanilla)
     local r = data.raw.recipe[recipe_name]
     if not r then 
@@ -54,22 +59,29 @@ state.logistic_robot_is_modified =
 state.construction_robot_is_modified =
     recipe_changed("construction-robot", vanilla_construction_ingredients)
 
+state.roboport_is_modified =
+    recipe_changed("roboport", vanilla_roboport_ingredients)
+
 local load_mk1 = false
 local mode = settings.startup["BRE-erzwinge-BRE-MK1-Bots"].value
 local logistic_enable = false
 local construction_enable = false
+local roboport_enable = false
 
 if mode == "Disable" then
     logistic_enable = false
     construction_enable = false
+	roboport_enable = false
 
 elseif mode == "Override" then
     logistic_enable = true
     construction_enable = true
+	roboport_enable = true
 
 elseif mode == "Auto" then
     logistic_enable = state.logistic_robot_is_modified
     construction_enable = state.construction_robot_is_modified
+	roboport_enable = state.roboport_is_modified
 end
 
 if logistic_enable then
@@ -95,6 +107,27 @@ if construction_enable then
 	table.insert(data.raw["technology"]["BRE-construction-robotics-2"].effects, {
 	type = "unlock-recipe",
 	recipe = "BRE-construction-robotics-mk2_2"
+	})
+end
+
+if roboport_enable then
+    log("BRE: roboport recipe modified!")
+	load_mk1 = true
+	table.insert(data.raw["technology"]["construction-robotics"].effects, {
+	type = "unlock-recipe",
+	recipe = "bre-roboport-mk1"
+	})
+	table.insert(data.raw["technology"]["logistic-robotics"].effects, {
+	type = "unlock-recipe",
+	recipe = "bre-roboport-mk1"
+	})
+	table.insert(data.raw["technology"]["BRE-logistic-robotics-2"].effects, {
+	type = "unlock-recipe",
+	recipe = "bre-roboport-mk2_2"
+	})
+	table.insert(data.raw["technology"]["BRE-construction-robotics-2"].effects, {
+	type = "unlock-recipe",
+	recipe = "bre-roboport-mk2_2"
 	})
 end
 
