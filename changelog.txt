@@ -1,4 +1,34 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.1
+Date: 2025-12-17
+  Bugfixes:
+    - Fixed migration-related issues.
+    - Fixed incorrect recipe reference (bre-roboport-mk3 instead of BRE-roboport-mk3) when Roboport MK3 was enabled with max tier MK2/MK3.
+---------------------------------------------------------------------------------------------------
+Version: 1.2.0
+Date: 2025-12-16
+  Major Features:
+    - Added new specialized robo buildings with clear, dedicated roles
+    - Robo Boxes (MK1–MK3) for robot storage with a single emergency charging slot
+    - Robo Charging Stations (MK1–MK3) dedicated to high-performance robot charging
+    - Robo Network Extenders (MK1–MK3) for extending logistic and construction network range
+    - Introduced a complete MK1–MK3 tier progression for all specialized robo buildings
+    - Added full support for items, entities, recipes and technologies for all new MK tiers
+  Features:
+    - Added startup setting to multiply the build costs of all specialized robo buildings
+    - Added startup setting to enable and control additional MK tiers for specialized robo buildings
+  Graphics:
+    - Added new custom sprites and icons for all specialized robo buildings
+    - Visual tier differentiation between MK1, MK2 and MK3 variants
+  Changes:
+    - Refactored and cleaned up core mod code
+    - Unified naming and structure across items, entities, recipes and technologies
+    - Improved internal structure for better maintainability and future expansion
+  Locale:
+    - Reworked localization structure
+    - Added a raw translation template (raw.cfg) to simplify community translations
+    - Cleaned up and standardized locale keys
+---------------------------------------------------------------------------------------------------
 Version: 1.1.18
 Date: 2025-12-09
   Changes:

@@ -30,6 +30,14 @@ data:extend(
 		default_value = "MK5"
 	},
 	{
+		type = "string-setting",
+		name = "BRE_Tier-Stufe-Extra",
+		order = "ada",
+		setting_type = "startup",
+		allowed_values = {"MK1", "MK2", "MK3"},
+		default_value = "MK3"
+	},
+	{
 		type = "bool-setting",
 		name = "BRE-Roboport-MK3",
 		order = "ae",
@@ -43,6 +51,15 @@ data:extend(
         setting_type = "startup",
         default_value = 1,
         minimum_value = 0.1,
+        maximum_value = 100
+    },
+    {
+        type = "double-setting",
+        name = "BRE-Kosten-Multiplikator",
+		order = "bc",
+        setting_type = "startup",
+        default_value = 1,
+        minimum_value = 0.5,
         maximum_value = 100
     },
     {
@@ -140,7 +157,7 @@ data:extend(
 		setting_type = "startup",
 		default_value = 50,
 		minimum_value = 25,
-		maximum_value = 250
+		maximum_value = 150
 	},
 	{
 		type = "int-setting",
@@ -149,7 +166,7 @@ data:extend(
 		setting_type = "startup",
 		default_value = 110,
 		minimum_value = 55,
-		maximum_value = 500
+		maximum_value = 250
 	},
 	{
 		type = "int-setting",

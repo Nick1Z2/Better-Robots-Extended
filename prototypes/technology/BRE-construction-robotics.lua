@@ -1,9 +1,8 @@
+-- Better Robots Extended | Copyright (c) 2025 Nick1Z2 | License: GPL-3.0
 local Forschung_Kosten_Multiplikator = settings.startup["BRE-Forschung-Kosten-Multiplikator"].value
 
-local space_science_pack = nil
 local additional_prerequisites = {"BRE-construction-robotics-3"}
 if settings.startup["BRE-use-space-science"].value == true then
-  space_science_pack = {"space-science-pack", 1}
   table.insert(additional_prerequisites, "space-science-pack")
 end
 
@@ -17,7 +16,7 @@ local effects1 = {
     },
     {
         type = "unlock-recipe",
-        recipe = "bre-roboport-mk2"
+        recipe = "BRE-roboport-mk2"
     }
 }
 
@@ -109,7 +108,7 @@ if max_tier == "MK4" or max_tier == "MK5" then
   if settings.startup["BRE-Roboport-MK3"].value then
     table.insert(effects, {
       type = "unlock-recipe",
-      recipe = "bre-roboport-mk3"
+      recipe = "BRE-roboport-mk3"
     })
 
   end

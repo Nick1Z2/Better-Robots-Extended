@@ -1,3 +1,4 @@
+-- Better Robots Extended | Copyright (c) 2025 Nick1Z2 | License: GPL-3.0
 local Forschung_Kosten_Multiplikator = settings.startup["BRE-Forschung-Kosten-Multiplikator"].value
 
 local space_science_pack = nil
@@ -35,7 +36,7 @@ data:extend({
 		{
 			{
 				type = "unlock-recipe",
-				recipe = "bre-roboport-mk3"
+				recipe = "BRE-roboport-mk3"
 			}
 		},
 		prerequisites = additional_prerequisites,

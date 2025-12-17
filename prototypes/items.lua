@@ -1,3 +1,6 @@
 require("item.BRE-construction-robotics")
 require("item.BRE-logistic-robotics")
 require("item.BRE-roboport")
+require("item.BRE-Robo-Erweiterung")
+require("item.BRE-Robo-Lader")
+require("item.BRE-Robo-Box")

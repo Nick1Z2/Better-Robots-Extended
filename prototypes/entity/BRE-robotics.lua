@@ -1,3 +1,4 @@
+-- Better Robots Extended | Copyright (c) 2025 Nick1Z2 | License: GPL-3.0
 local hit_effects = require ("__base__.prototypes.entity.hit-effects")
 local sounds = require("__base__.prototypes.entity.sounds")
 local simulations = require("__base__.prototypes.factoriopedia-simulations")

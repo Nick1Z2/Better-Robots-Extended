@@ -1,3 +1,4 @@
+-- Better Robots Extended | Copyright (c) 2025 Nick1Z2 | License: GPL-3.0
 local state = require("__Better_Robots_Extended__/scripts/state")
 
 local vanilla_logistic_ingredients = {
@@ -115,19 +116,19 @@ if roboport_enable then
 	load_mk1 = true
 	table.insert(data.raw["technology"]["construction-robotics"].effects, {
 	type = "unlock-recipe",
-	recipe = "bre-roboport-mk1"
+	recipe = "BRE-roboport-mk1"
 	})
 	table.insert(data.raw["technology"]["logistic-robotics"].effects, {
 	type = "unlock-recipe",
-	recipe = "bre-roboport-mk1"
+	recipe = "BRE-roboport-mk1"
 	})
 	table.insert(data.raw["technology"]["BRE-logistic-robotics-2"].effects, {
 	type = "unlock-recipe",
-	recipe = "bre-roboport-mk2_2"
+	recipe = "BRE-roboport-mk2_2"
 	})
 	table.insert(data.raw["technology"]["BRE-construction-robotics-2"].effects, {
 	type = "unlock-recipe",
-	recipe = "bre-roboport-mk2_2"
+	recipe = "BRE-roboport-mk2_2"
 	})
 end
 

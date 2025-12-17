@@ -1,9 +1,8 @@
+-- Better Robots Extended | Copyright (c) 2025 Nick1Z2 | License: GPL-3.0
 local Forschung_Kosten_Multiplikator = settings.startup["BRE-Forschung-Kosten-Multiplikator"].value
 
-local space_science_pack = nil
 local additional_prerequisites = {"BRE-logistic-robotics-3"}  -- Grundvoraussetzung
 if settings.startup["BRE-use-space-science"].value == true then
-  space_science_pack = {"space-science-pack", 1}
   table.insert(additional_prerequisites, "space-science-pack")
 end
 
@@ -17,7 +16,7 @@ local effects1 = {
     },
     {
         type = "unlock-recipe",
-        recipe = "bre-roboport-mk2"
+        recipe = "BRE-roboport-mk2"
     }
 }
 
@@ -109,7 +108,7 @@ if max_tier == "MK4" or max_tier == "MK5" then
   if settings.startup["BRE-Roboport-MK3"].value then
     table.insert(effects, {
       type = "unlock-recipe",
-      recipe = "bre-roboport-mk3"
+      recipe = "BRE-roboport-mk3"
     })
 
   end
@@ -125,14 +124,7 @@ if max_tier == "MK4" or max_tier == "MK5" then
 		unit =
 		{
 			count = 1500 * Forschung_Kosten_Multiplikator,
-			ingredients =
-			{
-				{"automation-science-pack", 1},
-				{"logistic-science-pack", 1},
-				{"chemical-science-pack", 1},
-				{"production-science-pack", 1},
-				space_science_pack and {"space-science-pack", 1} or nil  -- fügt nur hinzu, wenn definiert
-			},
+			ingredients = ingredients_mk4,
 			time = 45
 		},
 		order = "c-k-c-c"
@@ -170,15 +162,7 @@ if max_tier == "MK5" then
 		unit =
 		{
 			count = 2000 * Forschung_Kosten_Multiplikator,
-			ingredients =
-			{
-				{"automation-science-pack", 1},
-				{"logistic-science-pack", 1},
-				{"chemical-science-pack", 1},
-				{"production-science-pack", 1},
-				{"utility-science-pack", 1},
-				space_science_pack and {"space-science-pack", 1} or nil  -- fügt nur hinzu, wenn definiert
-			},
+			ingredients = ingredients_mk5,
 			time = 60
 		},
 		order = "c-k-c-d"

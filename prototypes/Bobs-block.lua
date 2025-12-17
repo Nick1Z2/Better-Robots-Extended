@@ -1,3 +1,4 @@
+-- Better Robots Extended | Copyright (c) 2025 Nick1Z2 | License: GPL-3.0
 if settings.startup["BRE-disable-bobs-bots"].value then
 
     local recipes = {

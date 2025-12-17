@@ -1,3 +1,4 @@
+-- Better Robots Extended | Copyright (c) 2025 Nick1Z2 | License: GPL-3.0
 local Loading_Speed = settings.startup["BRE-loading-speed"].value
 local hit_effects = require("__base__.prototypes.entity.hit-effects")
 local sounds = require("__base__.prototypes.entity.sounds")
@@ -5,12 +6,12 @@ local sounds = require("__base__.prototypes.entity.sounds")
 local BRE_roboportmk1 =
   {
     type = "roboport",
-    name = "bre-roboport-mk1",
+    name = "BRE-roboport-mk1",
     icon = "__base__/graphics/icons/roboport.png",
     flags = {"placeable-player", "player-creation"},
     fast_replaceable_group = "roboport",
-    minable = {mining_time = 0.1, result = "bre-roboport-mk1"},
-	next_upgrade = "bre-roboport-mk2",
+    minable = {mining_time = 0.1, result = "BRE-roboport-mk1"},
+	next_upgrade = "BRE-roboport-mk2",
     max_health = 500,
     corpse = "roboport-remnants",
     dying_explosion = "roboport-explosion",
@@ -167,12 +168,13 @@ local BRE_roboportmk1 =
   }
 
 local BRE_roboportmk2 = table.deepcopy(BRE_roboportmk1)
-BRE_roboportmk2.name = "bre-roboport-mk2"
+BRE_roboportmk2.name = "BRE-roboport-mk2"
+BRE_roboportmk2.icon = "__Better_Robots_Extended__/graphics/icons/bre-roboport-mk2.png"
 BRE_roboportmk2.fast_replaceable_group = "roboport"
-BRE_roboportmk2.next_upgrade = "bre-roboport-mk3"
+BRE_roboportmk2.next_upgrade = "BRE-roboport-mk3"
 BRE_roboportmk2.logistics_radius = settings.startup["BRE-logistic-radius-mk2"].value
 BRE_roboportmk2.construction_radius = settings.startup["BRE-construction-radius-mk2"].value
-BRE_roboportmk2.minable = {mining_time = 0.5, result = "bre-roboport-mk2"}
+BRE_roboportmk2.minable = {mining_time = 0.5, result = "BRE-roboport-mk2"}
 BRE_roboportmk2.energy_source.input_flow_limit = 16 * Loading_Speed .. "MW"
 BRE_roboportmk2.energy_source.buffer_capacity = 600 * Loading_Speed .. "MJ"
 BRE_roboportmk2.recharge_minimum = "160MJ"
@@ -259,11 +261,13 @@ BRE_roboportmk2.recharging_animation =
     }
 
 local BRE_roboportmk3 = table.deepcopy(BRE_roboportmk1)
-BRE_roboportmk3.name = "bre-roboport-mk3"
+BRE_roboportmk3.name = "BRE-roboport-mk3"
+BRE_roboportmk2.icon = "__Better_Robots_Extended__/graphics/icons/bre-roboport-mk3.png"
 BRE_roboportmk3.fast_replaceable_group = "roboport"
+BRE_roboportmk3.next_upgrade = nil
 BRE_roboportmk3.logistics_radius = settings.startup["BRE-logistic-radius-mk3"].value
 BRE_roboportmk3.construction_radius = settings.startup["BRE-construction-radius-mk3"].value
-BRE_roboportmk3.minable = {mining_time = 1, result = "bre-roboport-mk3"}
+BRE_roboportmk3.minable = {mining_time = 1, result = "BRE-roboport-mk3"}
 BRE_roboportmk3.energy_source.input_flow_limit = 48 * Loading_Speed .. "MW"
 BRE_roboportmk3.energy_source.buffer_capacity = 1200 * Loading_Speed .. "MJ"
 BRE_roboportmk3.recharge_minimum = "240MJ"
@@ -349,7 +353,6 @@ BRE_roboportmk3.recharging_animation =
       scale = 1.5,
       animation_speed = 0.5,
     }
-  
 
 data:extend(
   {

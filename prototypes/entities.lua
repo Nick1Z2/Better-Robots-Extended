@@ -1,2 +1,5 @@
 require("entity.BRE-robotics")
 require("entity.BRE-Roboport")
+require("entity.BRE-Robo-Erweiterung")
+require("entity.BRE-Robo-Box")
+require("entity.BRE-Robo-Lader")

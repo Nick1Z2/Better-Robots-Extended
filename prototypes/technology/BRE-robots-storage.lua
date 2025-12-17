@@ -1,3 +1,4 @@
+-- Better Robots Extended | Copyright (c) 2025 Nick1Z2 | License: GPL-3.0
 local electromagnetic_science_pack = nil
 local metallurgic_science_pack = nil
 local agricultural_science_pack = nil

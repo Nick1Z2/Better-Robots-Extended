@@ -1,3 +1,6 @@
 require("recipe.BRE-construction-robotics")
 require("recipe.BRE-logistic-robotics")
 require("recipe.BRE-roboport")
+require("recipe.BRE-Robo-Lader")
+require("recipe.BRE-Robo-Erweiterung")
+require("recipe.BRE-Robo-Box")
